@@ -56,6 +56,6 @@ TextView textView5,textView6,textView7;
         textView6.setText(getIntent().getStringExtra("pass"));
         textView7.setText(getIntent().getStringExtra("phone"));
 
-
+//
     }
 }
