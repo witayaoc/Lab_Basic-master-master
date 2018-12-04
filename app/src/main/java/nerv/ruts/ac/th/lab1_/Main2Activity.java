@@ -5,10 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 public class Main2Activity extends AppCompatActivity {
-Button button2,button3,image1;
+Button button2,button3,button8,image1;
+EditText username,pass,phone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,5 +44,24 @@ Button button2,button3,image1;
                 finish();
             }
         });
+
+        username = (EditText)findViewById(R.id.edituser);
+        pass =(EditText)findViewById(R.id.editpassword);
+        phone=(EditText)findViewById(R.id.editphone);
+
+
+        button8=(Button)findViewById(R.id.button8);
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Main2Activity.this,Main3Activity.class);
+                intent.putExtra("name",username.getText().toString());
+                intent.putExtra("passwd",pass.getText().toString());
+                intent.putExtra("phone",phone.getText().toString());
+                startActivity(intent);
+            }
+        });
+
+
     }
 }

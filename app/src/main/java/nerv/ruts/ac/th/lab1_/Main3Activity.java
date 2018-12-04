@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Main3Activity extends AppCompatActivity {
 
-Button button3,button4,image1;
+Button button4,button5,image1;
+TextView textView5,textView6,textView7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +19,8 @@ Button button3,button4,image1;
         setContentView(R.layout.activity_main3);
 
 
-        button3=(Button) findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener() {
+        button4=(Button) findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent button3 = new Intent(Main3Activity.this,Main2Activity.class);
@@ -27,8 +29,8 @@ Button button3,button4,image1;
         });
 
 
-        button4=(Button) findViewById(R.id.button4);
-        button4.setOnClickListener(new View.OnClickListener() {
+        button5=(Button) findViewById(R.id.button5);
+        button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent button4 = new Intent(Main3Activity.this,Main4Activity.class);
@@ -45,5 +47,13 @@ Button button3,button4,image1;
                 startActivity(img2);
             }
         });
+
+        textView5= (TextView)findViewById(R.id.textView5);
+        textView6= (TextView)findViewById(R.id.textView6);
+        textView7= (TextView)findViewById(R.id.textView7);
+
+        
+
+
     }
 }
