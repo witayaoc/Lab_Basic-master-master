@@ -52,7 +52,9 @@ TextView textView5,textView6,textView7;
         textView6= (TextView)findViewById(R.id.textView6);
         textView7= (TextView)findViewById(R.id.textView7);
 
-        
+        textView5.setText(getIntent().getStringExtra("name"));
+        textView6.setText(getIntent().getStringExtra("pass"));
+        textView7.setText(getIntent().getStringExtra("phone"));
 
 
     }

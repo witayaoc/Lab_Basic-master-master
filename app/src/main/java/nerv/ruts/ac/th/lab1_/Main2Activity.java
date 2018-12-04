@@ -56,7 +56,7 @@ EditText username,pass,phone;
             public void onClick(View view) {
                 Intent intent = new Intent(Main2Activity.this,Main3Activity.class);
                 intent.putExtra("name",username.getText().toString());
-                intent.putExtra("passwd",pass.getText().toString());
+                intent.putExtra("pass",pass.getText().toString());
                 intent.putExtra("phone",phone.getText().toString());
                 startActivity(intent);
             }
